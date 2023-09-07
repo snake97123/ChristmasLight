@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding-top: 20px;
+}
+
+.lights {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+ul {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.light:nth-child(1) { left: 10%; }
+.light:nth-child(2) { left: 20%; }
+.light:nth-child(3) { left: 30%; }
+.light:nth-child(4) { left: 40%; }
+.light:nth-child(5) { left: 50%; }
+.light:nth-child(6) { left: 60%; }
+.light:nth-child(7) { left: 70%; }
+.light:nth-child(8) { left: 80%; }
+.light:nth-child(9) { left: 90%; }
+
+.light:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 2px;
+  height: 100px; 
+  background-color: black;
+  transform: translateX(-50%); 
+}
+
+.red {
+  background-color: #ff0000;
+  transition: background-color 0.5s;
+}
+
+.yellow {
+  background-color: #ffff00;
+  transition: background-color 0.5s;
+}
+
+.green {
+  background-color: #00ff00;
+  transition: background-color 0.5s;
+}
+
+.blue {
+  background-color: #0000ff;
+  transition: background-color 0.5s;
+}
+
+button {
+  margin: 20px;
+  width: 200px;
+  height: 30px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 300px;
+}
